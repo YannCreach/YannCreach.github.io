@@ -1,0 +1,85 @@
+body {
+    background: rgb(65,86,196);
+    background: linear-gradient(259deg, rgba(106,93,204,1) 0%, rgba(65,86,196,1) 100% );
+    margin:0px;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.configuration {
+    background-color: #2F4AAA;
+    display:flex;
+    height:5em;
+    margin:0;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border:0px;
+    margin:2px;
+    text-align: center;
+    height:3em;
+}
+
+#gridSize:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#gridSize:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#invader {
+    display:flex;
+    width:100vw;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.invader__grid {
+    display: grid;
+}
+
+.invader__grid div {
+    border : 2px solid rgba(0, 0, 0, 0.25);
+    background-color: #d2dae2;
+}
+
+#colorSelector {
+    background-color: rgba(0,0,0,0.4);
+    display:flex;
+    position:absolute;
+    justify-content: space-between;
+    align-items: center;
+    right:0px;
+    bottom:0px;
+    padding : 1em 0 1em 1em;
+}
+
+.colors {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    margin : 2px 20px 2px 2px;
+    /* margin-right: 1em; */
+}
+
+.colors--selected{
+    border: 2px solid black;
+    width: 2em;
+    height: 2em;
+    margin:0 18px 0 0;
+}
+
+.newColor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2em;
+}
